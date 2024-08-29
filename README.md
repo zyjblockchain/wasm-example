@@ -1,6 +1,10 @@
 ## wapc-go 仓库用例
 [wapc-go](https://github.com/wapc/wapc-go) 是 golang 实现的 wasm 运行时库。
 
+wapc-go 中集成了 golang 的三种主要的 wasm 运行时库，本用例使用了 wazero 库作为运行时。
+本用例的目标是编写一个 golang 代码 token.go , 并通过 tinygo 编译成 wasm 文件。
+然后使用 wapc-go 中集成的 wazero 运行时加载 wasm 进行调用。
+
 ## 准备工作
 ### tinygo 安装
 安装最新版本 tinygo: https://tinygo.org/getting-started/install
