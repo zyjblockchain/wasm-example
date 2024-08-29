@@ -3,8 +3,10 @@
 
 ### 用例实现
 token.go 中的代码通过 wapc-go 规定方式实现的一个简单的 token 合约代码。并通过 tinygo 编译成 token.wasm
-### tinygo 安装
-https://tinygo.org/getting-started/install/macos/
+
+### tinygo
+安装： https://tinygo.org/getting-started/install
+build: GOOS=wasi GOARCH=wasm  GO111MODULE=on tinygo build -o token.wasm -target=wasi  token.go
 
 ### 测试用例
 在 main.go 中负责加载 token.wasm 并启动一个 web 服务用于测试 token.wasm 的代码执行。
