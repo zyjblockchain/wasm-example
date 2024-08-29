@@ -6,6 +6,7 @@ token.go 中的代码通过 wapc-go 规定方式实现的一个简单的 token �
 
 ### tinygo
 安装： https://tinygo.org/getting-started/install
+
 build: GOOS=wasi GOARCH=wasm  GO111MODULE=on tinygo build -o token.wasm -target=wasi  token.go
 
 ### 测试用例
